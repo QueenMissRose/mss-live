@@ -10,10 +10,10 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 
-	<body>
+	<body class="p-0">
 
 		<!-- !Nav -->
-		<div class="navbar bg-base-100 sticky">
+		<div class="navbar bg-base-100 sticked border-2 border-black rounded-full mt-10 px-8">
 			<div class="navbar-start">
 				<div class="dropdown">
 					<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -25,30 +25,33 @@
 					</div>
 					<ul tabindex="0"
 						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-						<li><a>Item 1</a></li>
-						<li><a>Item 2</a></li>
-						<li><a>Item 3</a></li>
+						<li><a>What We Do</a></li>
+						<li><a>How We Do It</a></li>
+						<li><a>Pricing</a></li>
 					</ul>
 				</div>
-				<a class="btn btn-ghost text-xl"><img class="w-40 h-10 mt-2" src="./img/logo.png" alt=""></a>
+				<a class="text-xl hover:cursor"><img class="w-auto h-10 p-0" src="./img/logo.png" alt="logo"></a>
 			</div>
 
 			<!--? Nav Menu -->
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1">
 					<!--Who We Are -->
-					<li class="roboto-span"><a>Who We Are</a></li>
-
-					<!--What We Do -->
 					<li class="roboto-span"><a>What We Do</a></li>
 
-					<!--How We Do It -->
+					<!--What We Do -->
 					<li class="roboto-span"><a>How We Do It</a></li>
+
+					<!--How We Do It -->
+					<li class="roboto-span"><a>Pricing</a></li>
 				</ul>
 			</div>
+
 			<!--? Contact Us -->
-			<div class="navbar-end">
-				<a class="btn">Contact Us</a>
+			<div class="navbar-end static">
+				<div class="absolute h-50 w-50 py-12 p-2 bg-accent-content rounded-full border-2 border-black rotate-6">
+					<p class="uppercase font-milk">Contact Us</p>
+				  </div>
 			</div>
 		</div>
 
@@ -65,133 +68,133 @@
 			</div>
 		</div>
 
-		<!--! Pricing -->
 
-		<section class="bg-white dark:bg-gray-900">
-			<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-				<div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-					<p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-				</div>
-				<div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-					<!-- Pricing Card -->
-					<div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-						<p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
-						<div class="flex justify-center items-baseline my-8">
-							<span class="mr-2 text-5xl font-extrabold">$29</span>
-							<span class="text-gray-500 dark:text-gray-400">/month</span>
-						</div>
-						<!-- List -->
-						<ul role="list" class="mb-8 space-y-4 text-left">
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Individual configuration</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>No setup, or hidden fees</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Team size: <span class="font-semibold">1 developer</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Premium support: <span class="font-semibold">6 months</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Free updates: <span class="font-semibold">6 months</span></span>
-							</li>
-						</ul>
-						<a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-					</div>
-					<!-- Pricing Card -->
-					<div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 class="mb-4 text-2xl font-semibold">Company</h3>
-						<p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
-						<div class="flex justify-center items-baseline my-8">
-							<span class="mr-2 text-5xl font-extrabold">$99</span>
-							<span class="text-gray-500 dark:text-gray-400">/month</span>
-						</div>
-						<!-- List -->
-						<ul role="list" class="mb-8 space-y-4 text-left">
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Individual configuration</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>No setup, or hidden fees</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Team size: <span class="font-semibold">10 developers</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Premium support: <span class="font-semibold">24 months</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Free updates: <span class="font-semibold">24 months</span></span>
-							</li>
-						</ul>
-						<a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-					</div>
-					<!-- Pricing Card -->
-					<div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-						<h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-						<p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
-						<div class="flex justify-center items-baseline my-8">
-							<span class="mr-2 text-5xl font-extrabold">$499</span>
-							<span class="text-gray-500 dark:text-gray-400">/month</span>
-						</div>
-						<!-- List -->
-						<ul role="list" class="mb-8 space-y-4 text-left">
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Individual configuration</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>No setup, or hidden fees</span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Team size: <span class="font-semibold">100+ developers</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Premium support: <span class="font-semibold">36 months</span></span>
-							</li>
-							<li class="flex items-center space-x-3">
-								<!-- Icon -->
-								<svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-								<span>Free updates: <span class="font-semibold">36 months</span></span>
-							</li>
-						</ul>
-						<a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-					</div>
+		<!--!something -->
+		<div class="hero bg-base-200 min-h-screen">
+			<div class="hero-content text-center">
+				<div class="max-w-md">
+
+					<!--?Because life's too short... -->
+					<h1 class="h1">Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.</h1>
+					<button class="btn btn-primary">Get Started</button>
 				</div>
 			</div>
-		  </section>
+		</div>
 
+		  <!--!pricing -->
+
+		  <header class="max-w-6xl mx-auto py-8 px-5 flex justify-between lg:px-8">
+			<a href="#/" class="text-2xl text-gray-900 font-semibold">price<span class="text-indigo-600">ly</span></a>
+			<nav class="">
+			  <ul class="flex pt-1.5 text-md lg:pt-0 lg:text-lg">
+				<li class="lg:px-4">
+				  <a href="#/" class="p-3 text-gray-500 font-semibold">about</a>
+				</li>
+				<li class="lg:px-4">
+				  <a href="#/" class="p-3 text-gray-500 font-semibold">blog</a>
+				</li>
+				<li class="lg:pl-4">
+				  <a href="#/" class="p-3 text-gray-500 font-semibold">contact</a>
+				</li>
+			  </ul>
+			</nav>
+		  </header>
+		  <main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
+			
+			<div class="max-w-md mx-auto mb-14 text-center">
+			  <h1 class="text-4xl font-semibold mb-6 lg:text-5xl"><span class="text-indigo-600">Flexible</span> Plans</h1>
+			  <p class="text-xl text-gray-500 font-medium">Choose a plan that works best for you and your team.</p>
+			</div>
+			
+			<div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+			  
+			  <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+				<div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+				  <img src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+				  <div class="ml-5">
+					<span class="block text-2xl font-semibold">Basic</span>
+					<span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">10 </span></span><span class="text-gray-500 font-medium">/ user</span>
+				  </div>
+				</div>
+				<ul class="mb-7 font-medium text-gray-500">
+				  <li class="flex text-lg mb-2">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3">Get started with <span class="text-black">messaging</span></span>
+				  </li>
+				  <li class="flex text-lg mb-2">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3">Flexible <span class="text-black">team meetings</span></span>
+				  </li>
+				  <li class="flex text-lg">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3"><span class="text-black">5 TB</span> cloud storage</span>
+				  </li>
+				</ul>
+				<a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+				  Choose Plan
+				  <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+				</a>
+			  </div>
+			  
+			  <div class="w-full flex-1 p-8 order-1 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+				<div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+				  <img src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+				  <div class="ml-5">
+					<span class="block text-3xl font-semibold text-white">Startup</span>
+					<span><span class="font-medium text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold text-white">24 </span></span><span class="font-medium">/ user</span>
+				  </div>
+				</div>
+				<ul class="mb-10 font-medium text-xl">
+				  <li class="flex mb-6">
+					<img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+					<span class="ml-3">All features in <span class="text-white">Basic</span></span>
+				  </li>
+				  <li class="flex mb-6">
+					<img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+					<span class="ml-3">Flexible <span class="text-white">call scheduling</span></span>
+				  </li>
+				  <li class="flex">
+					<img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+					<span class="ml-3"><span class="text-white">15 TB</span> cloud storage</span>
+				  </li>
+				</ul>
+				<a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-6 px-4 text-center text-white text-2xl">
+				  Choose Plan
+				  <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+				</a>
+			  </div>
+			  
+			  <div class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+				<div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+				  <img src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+				  <div class="ml-5">
+					<span class="block text-2xl font-semibold">Enterprise</span>
+					<span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">35 </span></span><span class="text-gray-500 font-medium">/ user</span>
+				  </div>
+				</div>
+				<ul class="mb-7 font-medium text-gray-500">
+				  <li class="flex text-lg mb-2">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3">All features in <span class="text-black">Startup</span></span>
+				  </li>
+				  <li class="flex text-lg mb-2">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3">Growth <span class="text-black">oriented</span></span>
+				  </li>
+				  <li class="flex text-lg">
+					<img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+					<span class="ml-3"><span class="text-black">Unlimited</span> cloud storage</span>
+				  </li>
+				</ul>
+				<a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+				  Choose Plan
+				  <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+				</a>
+			  </div>
+			  
+			</div>
+			
+		  </main>
 		<!--! Footer -->
 		<footer class="footer bg-neutral text-neutral-content items-center p-4">
 			<aside class="grid-flow-col items-center">

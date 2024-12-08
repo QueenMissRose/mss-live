@@ -34,7 +34,7 @@
 }
 
 /* Sticky Nav */
-.sticky {
+.sticked {
     @apply fixed top-0 z-10;
 }
 
