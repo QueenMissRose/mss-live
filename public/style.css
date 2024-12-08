@@ -1497,6 +1497,26 @@ html{
   margin-top: 2rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
 .block{
   display: block;
 }
@@ -1919,12 +1939,32 @@ html{
 }
 
 @media (min-width: 640px){
+  .sm\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .sm\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .sm\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .sm\:mt-36{
+    margin-top: 9rem;
+  }
+
   .sm\:w-96{
     width: 24rem;
   }
 }
 
 @media (min-width: 768px){
+  .md\:mt-36{
+    margin-top: 9rem;
+  }
+
   .md\:place-self-center{
     place-self: center;
   }
