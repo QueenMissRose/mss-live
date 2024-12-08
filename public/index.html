@@ -7,10 +7,12 @@
 		<meta name="keywords" content="website, freelance">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Moji Static Studios</title>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 		<link rel="stylesheet" href="style.css">
 	</head>
 
-	<body class="p-0">
+	<body class="">
 
 		<!-- !Nav -->
 		<div class="navbar bg-base-100 sticked border-2 border-black rounded-full mt-10 px-8">
@@ -25,9 +27,9 @@
 					</div>
 					<ul tabindex="0"
 						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-						<li><a>What We Do</a></li>
-						<li><a>How We Do It</a></li>
-						<li><a>Pricing</a></li>
+						<li class="uppercase font-roboto"><a>What We Do</a></li>
+						<li class="uppercase font-roboto"><a>How We Do It</a></li>
+						<li class="uppercase font-roboto"><a>Pricing</a></li>
 					</ul>
 				</div>
 				<a class="text-xl hover:cursor"><img class="w-auto h-10" src="./img/logo.png" alt="logo"></a>
@@ -49,37 +51,169 @@
 
 			<!--? Contact Us -->
 			<div class="navbar-end static">
-					<div class="absolute h-50 w-50 py-12 p-2 bg-accent-content rounded-full border-2 border-black rotate-6 cursor-pointer contact">
-						<a class=" uppercase font-milk">Contact Us</a>
-					</div>
+				<div
+					class="absolute h-50 w-50 py-12 p-2 bg-accent-content rounded-full border-2 border-black rotate-6 cursor-pointer contact hover:-rotate-6 transition ease-out duration-500">
+					<a class=" uppercase font-milk">Contact Us</a>
+				</div>
 			</div>
 		</div>
+
 
 
 		<!--!capture attention with... -->
-		<div class=" hero bg-base-200 min-h-screen">
-			<div class="hero-content text-center">
-				<div class="max-w-md">
 
-					<!--?Because life's too short... -->
-					<h1 class="h1 mt-36">Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.</h1>
-					<button class="btn btn-primary">Get Started</button>
+		<section
+			class="pt-28 bg-blue-100 h-screen flex flex-col justify-center items-center text-center font-milk px-4">
+			<!--? Main Tagline -->
+			<div class="bg-white shadow-lg p-8 max-w-3xl border-2 border-black rounded-2xl py-20 px-10">
+				<h1 class="text-4xl md:text-5xl text-gray-900 leading-tight">
+					Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.
+				</h1>
+			</div>
+
+			<!--? Brand Card -->
+			<div class="bg-blue-200 rounded-lg mt-6 px-6 py-3">
+				<p class="text-2xl">Moji Static Studios</p>
+			</div>
+		</section>
+
+
+
+		<!--! What We Do It -->
+		<section id="what-we-do" class="bg-base-200 min-h-screen flex items-center py-12">
+			<div class="container mx-auto text-center">
+				<h2 class="text-3xl font-milk mb-6 h4">What We Do</h2>
+				<p class="text-base-content mb-10 font-roboto">
+					At Moji Static Studios, we design and develop stunning websites that help your business grow.
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+					<!--? Card 1 -->
+					<div
+						class="card bg-base-100 shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
+						<figure class="pt-6">
+							<img src="https://via.placeholder.com/80" alt="Custom Website Design"
+								class="w-16 mx-auto" />
+						</figure>
+						<div class="card-body text-center">
+							<h3 class="text-xl font-semibold text-primary-focus font-milk">Custom Website Design</h3>
+							<p class="text-base-content font-roboto">
+								Beautiful, responsive designs tailored to your brand.
+							</p>
+						</div>
+					</div>
+
+					<!--? Card 2 -->
+					<div
+						class="card bg-base-100 shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
+						<figure class="pt-6">
+							<img src="https://via.placeholder.com/80" alt="Web Development" class="w-16 mx-auto" />
+						</figure>
+						<div class="card-body text-center">
+							<h3 class="text-xl font-semibold text-primary-focus font-milk">Web Development</h3>
+							<p class="text-base-content font-roboto">
+								Scalable, fast, and secure websites built with cutting-edge tech.
+							</p>
+						</div>
+					</div>
+
+					<!--? Card 3 -->
+					<div
+						class="card bg-base-100 shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
+						<figure class="pt-6">
+							<img src="https://via.placeholder.com/80" alt="SEO & Optimization" class="w-16 mx-auto" />
+						</figure>
+						<div class="card-body text-center">
+							<h3 class="text-xl font-semibold text-primary-focus font-milk">SEO & Optimization</h3>
+							<p class="text-base-content font-roboto">
+								Websites optimized for speed, search engines, and conversions.
+							</p>
+						</div>
+					</div>
+
+					<!--? Card 4 -->
+					<div
+						class="card bg-base-100 shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
+						<figure class="pt-6">
+							<img src="https://via.placeholder.com/80" alt="Support & Maintenance"
+								class="w-16 mx-auto" />
+						</figure>
+						<div class="card-body text-center">
+							<h3 class="text-xl font-semibold text-primary-focus font-milk">Support & Maintenance</h3>
+							<p class="text-base-content font-roboto">
+								Keep your site updated and running smoothly with our expert help.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="mt-8">
+					<a href="#portfolio" class="btn btn-primary btn-wide font-milk">
+						View Our Portfolio
+					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 
-
-		<!--!something -->
-		<div class="hero bg-base-200 min-h-screen">
-			<div class="hero-content text-center">
-				<div class="max-w-md">
-
-					<!--?Because life's too short... -->
-					<h1 class="h1">Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.</h1>
-					<button class="btn btn-primary">Get Started</button>
+		<section id="how-we-do-it" class="bg-blue-100 min-h-screen py-12">
+			<div class="container mx-auto">
+				<!-- Header -->
+				<div class="text-center mb-8">
+					<h2 class="text-4xl font-bold text-black">How We Do It</h2>
+					<p class="text-lg text-gray-700">What is our Process?</p>
+				</div>
+				<!-- Grid Layout -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<!-- Card 1 -->
+					<div class="relative bg-blue-200 shadow-md rounded-lg p-6">
+						<div
+							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-bold flex items-center justify-center rounded-full">
+							1
+						</div>
+						<h3 class="text-2xl font-semibold text-black mb-2">Proposal</h3>
+						<p class="text-gray-700">Initial planning and idea discussions.</p>
+					</div>
+					<!-- Card 2 -->
+					<div class="relative bg-blue-300 shadow-md rounded-lg p-6">
+						<div
+							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-bold flex items-center justify-center rounded-full">
+							2
+						</div>
+						<h3 class="text-2xl font-semibold text-black mb-2">Vision Planning</h3>
+						<p class="text-gray-700">Mapping out your vision into actionable steps.</p>
+					</div>
+					<!-- Card 3 -->
+					<div class="relative bg-white shadow-md rounded-lg p-6">
+						<div
+							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-bold flex items-center justify-center rounded-full">
+							3
+						</div>
+						<h3 class="text-2xl font-semibold text-black mb-2">Design</h3>
+						<p class="text-gray-700">Crafting beautiful, user-friendly designs.</p>
+					</div>
+					<!-- Card 4 -->
+					<div class="relative bg-yellow-200 shadow-md rounded-lg p-6">
+						<div
+							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-bold flex items-center justify-center rounded-full">
+							4
+						</div>
+						<h3 class="text-2xl font-semibold text-black mb-2">Develop</h3>
+						<p class="text-gray-700">Building secure, scalable websites.</p>
+					</div>
+					<!-- Card 5 -->
+					<div class="relative bg-yellow-300 shadow-md rounded-lg p-6 md:col-span-2">
+						<div
+							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-bold flex items-center justify-center rounded-full">
+							5
+						</div>
+						<h3 class="text-2xl font-semibold text-black mb-2">Deploy</h3>
+						<p class="text-gray-700">Launch and ongoing support for your project.</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+
+
 
 		<!--!pricing -->
 
@@ -223,6 +357,51 @@
 				</div>
 		</div>
 
+		<section class="bg-blue-100 py-16 px-4">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+				<!-- Contact Form -->
+				<div class="bg-white shadow-lg rounded-lg p-8">
+					<h2 class="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+					<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+						<div>
+							<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+							<input type="text" id="name" name="name" required class="input input-bordered w-full mt-1">
+						</div>
+						<div>
+							<label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+							<input type="email" id="email" name="_replyto" required
+								class="input input-bordered w-full mt-1">
+						</div>
+						<div>
+							<label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+							<input type="text" id="subject" name="subject" required
+								class="input input-bordered w-full mt-1">
+						</div>
+						<div>
+							<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+							<textarea id="message" name="message" rows="4" required
+								class="textarea textarea-bordered w-full mt-1"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary w-full">Send Message</button>
+					</form>
+				</div>
+
+				<!-- Calendly Embed -->
+				<div class="bg-white shadow-lg rounded-lg p-8">
+					<h2 class="text-3xl font-bold text-gray-900 mb-6">Book a Call</h2>
+					<!-- Calendly Embed -->
+					<div class="relative w-full" style="padding-bottom: 155%; height: 0;">
+						<iframe
+							src="https://calendly.com/mojistaticstudios?embed_domain=YOUR_WEBSITE_DOMAIN&embed_type=Inline"
+							class="absolute top-0 left-0 w-full h-full" frameborder="0" scrolling="no">
+						</iframe>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
 		</main>
 		<!--! Footer -->
 		<footer class="footer bg-neutral text-neutral-content items-center p-4">
@@ -263,6 +442,8 @@
 			</nav>
 		</footer>
 
+
 		<script src="main.js"></script>
 	</body>
+
 </html>

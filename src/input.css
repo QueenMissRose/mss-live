@@ -39,5 +39,5 @@
 }
 
 .roboto-span {
-    @apply font-roboto text-lg;
+    @apply font-roboto text-lg uppercase;
 }
