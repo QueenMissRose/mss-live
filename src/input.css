@@ -1,0 +1,43 @@
+/*! Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*Roboto Mono*/
+
+@font-face {
+    font-family: 'Milk and Honey';
+    src: url('/public/fonts/milk_and_honey/Milk And Honey.ttf') format('truetype');
+}
+
+/*!Tailwind Components etc. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*! Commonly used styles */
+.card {
+    @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg;
+}
+
+.h1 {
+    @apply font-milk text-6xl;
+}
+
+.h2 {
+    @apply font-milk text-6xl;
+}
+
+.h4 {
+    @apply font-milk text-4xl;
+}
+.p {
+    @apply font-roboto text-3xl;
+}
+
+/* Sticky Nav */
+.sticky {
+    @apply fixed top-0 z-10;
+}
+
+.roboto-span {
+    @apply font-roboto text-lg;
+}
