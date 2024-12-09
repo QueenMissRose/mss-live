@@ -1983,6 +1983,10 @@ html{
   height: 100vh;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -2084,6 +2088,10 @@ html{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded-3xl{
@@ -2580,6 +2588,10 @@ html{
 @media (min-width: 640px){
   .sm\:block{
     display: block;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:w-96{
