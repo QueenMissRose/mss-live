@@ -1925,7 +1925,6 @@ html{
   margin-top: 2rem;
 }
 
-
 .block{
   display: block;
 }
@@ -2299,6 +2298,10 @@ html{
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-center{
