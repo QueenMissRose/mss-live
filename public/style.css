@@ -1955,6 +1955,10 @@ html{
   margin-right: 5rem;
 }
 
+.mt-36{
+  margin-top: 9rem;
+}
+
 .block{
   display: block;
 }
@@ -2352,6 +2356,10 @@ html{
 
 .pt-32{
   padding-top: 8rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-center{
