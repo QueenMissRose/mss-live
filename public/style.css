@@ -2263,6 +2263,10 @@ html{
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2411,6 +2415,10 @@ html{
 
 .align-top{
   vertical-align: top;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-milk{
