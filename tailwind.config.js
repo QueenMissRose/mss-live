@@ -7,7 +7,10 @@ module.exports = {
         roboto: ['Roboto Mono', 'serif'],
         milk: ['Milk and Honey', 'serif']
         
-      }
+      },
+      boxShadow: {
+        'boxy': '4px 6px 0px 0px rgba(0, 0, 0, 25%)',
+      },
     },
   },
   plugins: [
