@@ -1933,6 +1933,10 @@ html{
   margin-top: 2rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -2011,6 +2015,14 @@ html{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .flex-1{
@@ -2160,6 +2172,26 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2244,6 +2276,21 @@ html{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pb-1{
@@ -2423,6 +2470,46 @@ html{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-accent-content{
+  --tw-text-opacity: 1;
+  color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity, 1)));
+}
+
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-400{
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-300{
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity, 1));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2561,6 +2648,11 @@ html{
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .sm\:text-4xl{
