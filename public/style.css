@@ -716,6 +716,18 @@ html{
     --tw-text-opacity: 1;
     color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
   }
+
+  .table tr.hover:hover,
+  .table tr.hover:nth-child(even):hover{
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+  }
+
+  .table-zebra tr.hover:hover,
+  .table-zebra tr.hover:nth-child(even):hover{
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+  }
 }
 
 .btn{
@@ -1847,6 +1859,70 @@ html{
   top: 0px;
 }
 
+.-right-3{
+  right: -0.75rem;
+}
+
+.-right-1{
+  right: -0.25rem;
+}
+
+.-top-1{
+  top: -0.25rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.right-1{
+  right: 0.25rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
+.right-20{
+  right: 5rem;
+}
+
+.-top-4{
+  top: -1rem;
+}
+
+.-top-10{
+  top: -2.5rem;
+}
+
+.-top-8{
+  top: -2rem;
+}
+
+.-top-7{
+  top: -1.75rem;
+}
+
+.-top-2{
+  top: -0.5rem;
+}
+
+.-top-0{
+  top: -0px;
+}
+
+.-top-5{
+  top: -1.25rem;
+}
+
+.-top-6{
+  top: -1.5rem;
+}
+
 .z-\[1\]{
   z-index: 1;
 }
@@ -1863,14 +1939,24 @@ html{
   order: 3;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-10{
@@ -1925,6 +2011,18 @@ html{
   margin-top: 2rem;
 }
 
+.ml-20{
+  margin-left: 5rem;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
 .block{
   display: block;
 }
@@ -1965,6 +2063,10 @@ html{
   height: 100vh;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1991,6 +2093,10 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-3xl{
@@ -2156,6 +2262,10 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.fill-current{
+  fill: currentColor;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2232,11 +2342,6 @@ html{
   padding-bottom: 0.75rem;
 }
 
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2250,6 +2355,11 @@ html{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pb-1{
@@ -2292,6 +2402,10 @@ html{
   padding-top: 0.5rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .pt-28{
   padding-top: 7rem;
 }
@@ -2300,8 +2414,20 @@ html{
   padding-top: 1.5rem;
 }
 
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -2564,6 +2690,11 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-base-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+}
+
 .hover\:text-base-200:hover{
   --tw-text-opacity: 1;
   color: var(--fallback-b2,oklch(var(--b2)/var(--tw-text-opacity, 1)));
@@ -2574,14 +2705,26 @@ html{
     display: block;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:w-96{
     width: 24rem;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 }
 
 @media (min-width: 768px){
   .md\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:grid-cols-2{
