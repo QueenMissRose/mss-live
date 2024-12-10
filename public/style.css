@@ -1839,20 +1839,20 @@ html{
   top: -0.75rem;
 }
 
-.left-0{
-  left: 0px;
-}
-
-.top-0{
-  top: 0px;
-}
-
 .-top-7{
   top: -1.75rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .right-10{
   right: 2.5rem;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .z-\[1\]{
@@ -1879,6 +1879,10 @@ html{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mt-14{
+  margin-top: -3.5rem;
 }
 
 .mb-10{
@@ -1925,16 +1929,8 @@ html{
   margin-top: 0.75rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .mt-8{
   margin-top: 2rem;
-}
-
-.-mt-14{
-  margin-top: -3.5rem;
 }
 
 .block{
@@ -2092,10 +2088,6 @@ html{
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -2189,11 +2181,6 @@ html{
   padding-right: 0.25rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2249,11 +2236,6 @@ html{
   padding-bottom: 8rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2278,6 +2260,10 @@ html{
 
 .pb-36{
   padding-bottom: 9rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pb-7{
@@ -2310,10 +2296,6 @@ html{
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
 }
 
 .text-center{
@@ -2543,28 +2525,6 @@ html{
   text-transform: uppercase;
 }
 
-.starburst{
-  aspect-ratio: 1;
-  width: 200px;
-  /* adjust to control the size */
-  clip-path: polygon(
-      100% 50%,
-      77.03% 63.02%,
-      81.17% 89.09%,
-      56.68% 79.25%,
-      38.87% 98.75%,
-      31.3% 73.45%,
-      4.95% 71.69%,
-      20% 50%,
-      4.95% 28.31%,
-      31.3% 26.55%,
-      38.87% 1.25%,
-      56.68% 20.75%,
-      81.17% 10.91%,
-      77.03% 36.98%
-    );
-}
-
 .hover\:-rotate-6:hover{
   --tw-rotate: -6deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2586,8 +2546,26 @@ html{
     display: block;
   }
 
+  .sm\:h-20{
+    height: 5rem;
+  }
+
   .sm\:w-96{
     width: 24rem;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
+  .sm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2687,5 +2665,11 @@ html{
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-auto{
+    width: auto;
   }
 }
