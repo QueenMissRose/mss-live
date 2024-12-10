@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="utf-8">
-		<meta name="description" content="Your description goes here">
-		<meta name="keywords" content="website, freelance">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Moji Static Studios</title>
-		<link rel="icon" type="image/png" href="/ico/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/ico/favicon.svg" />
-		<link rel="shortcut icon" href="/ico/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="Moji Static Studios" />
-		<link rel="manifest" href="/ico/site.webmanifest" />
-		<link rel="stylesheet" href="style.css">
-	</head>
-<body>
 
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Your description goes here">
+        <meta name="keywords" content="website, freelance">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Moji Static Studios</title>
+        <link rel="icon" type="image/png" href="/ico/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/ico/favicon.svg" />
+        <link rel="shortcut icon" href="/ico/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Moji Static Studios" />
+        <link rel="manifest" href="/ico/site.webmanifest" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="flex flex-col items-center">
+
+        <!--!!!!!! TIER ONE FORM !!!!!! -->
         <!--? Contact Form -->
-        <div class="bg-white shadow-lg rounded-3xl p-8">
-            <h2 class="text-3xl font-milk text-gray-900 mb-6 text-center">Send an Email</h2>
-            <form action="https://formspree.io/f/mdkovzjk" method="POST" class="space-y-6 font-roboto">
+        <div class="bg-base-100 shadow-lg rounded-3xl p-8 w-1/3 mt-20">
+            <h2 class="text-3xl font-milk text-gray-900 mb-6 text-center">Thanks for choosing the Starter tier!</h2>
+            <p class="font-roboto">Please fill out the form below to let us know who you are and to tell us more details about what you're looking for. We will e-mail you back within 24 hours.</p>
+            <p class="font-roboto mb-8">If you're looking to book a call instead, do so <a href="https://calendly.com/mojistaticstudios" class="underline">here</a>.</p>
+            <form action="https://formspree.io/f/xovqzldd" method="POST" class="space-y-6 font-roboto">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                     <input type="text" id="name" name="name" required class="input input-bordered w-full mt-1">
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="_replyto" required
-                        class="input input-bordered w-full mt-1">
+                    <input type="email" id="email" name="_replyto" required class="input input-bordered w-full mt-1">
                 </div>
                 <div>
                     <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-                    <input type="text" id="subject" name="subject" required
-                        class="input input-bordered w-full mt-1">
+                    <input type="text" id="subject" name="subject" required class="input input-bordered w-full mt-1">
                 </div>
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                     <textarea id="message" name="message" rows="4" required
                         class="textarea textarea-bordered w-full mt-1"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                <button type="submit" class="btn bg-gray-200 border-gray-300 w-full hover:bg-gray-300">Send Message</button>
             </form>
         </div>
 
-        <!--? Book a Call -->
-        <div class="bg-white shadow-lg rounded-3xl p-8">
-            <h2 class="text-3xl font-milk text-center text-gray-900 mb-6">Book a Call</h2>
-            <!--? Calendly Embed -->
-            <div class="relative w-full" style="padding-bottom: 100%; height: 0;">
-                <iframe
-                    src="https://calendly.com/mojistaticstudios?embed_domain=YOUR_WEBSITE_DOMAIN&embed_type=Inline"
-                    class="absolute top-0 left-0 w-full h-full" frameborder="0" scrolling="yes">
-                </iframe>
-            </div>
-            <p class="font-roboto text-center">If embedded page isn't working to book a call, click <a href="https://calendly.com/mojistaticstudios" target="_blank" class="underline">here</a></p>
+        <!--? Looking Forward... -->
+        <div class="mb-10">
+            <h1 class="py-20 text-center h2">Looking forward to talking with you soon!</h1>
         </div>
-    </div>
-    <div>
-        <h1 class="py-32 text-center h2">Looking forward to talking with you soon!</h1>
-    </div>
-    
-</body>
+
+      <div class="self-start mb-5 ml-10">
+        <!--* Back Home Button -->
+        <a href="index.html" class="text-center font-roboto  hover:font-bold hover:transition duration-200"><i class="fa-regular fa-hand-point-left bg-base-200 border-none p-4 rounded-lg"></i> Back to Home</a>  
+      </div>
+
+        <!--! Footer -->
+		<footer class="footer bg-gray-200 text-neutral-content items-center p-4">
+			<aside class="grid-flow-col items-center">
+				<img src="img/m.png" alt="m from Moji Static Studios as a shorter logo" class="w-auto h-20">
+				</svg>
+				<p class="font-roboto">Copyright © 2024 - All rights reserved</p>
+			</aside>
+			<nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+				<!--* Twitter / X -->
+				<a class="" href="https://x.com/mojistatic" target="_blank">
+					<i class="fa-brands fa-x-twitter fa-2x hover:text-base-200 transition duration-500"></i>
+				</a>
+				<!--* Instagram -->
+				<a href="https://www.instagram.com/mojistaticstudios" target="_blank">
+					<i class="fa-brands fa-instagram fa-2x hover:text-base-200 transition duration-500"></i>
+				</a>
+				<!--* TikTok -->
+				<a href="https://www.tiktok.com/@mojistaticstudios" target="_blank">
+					<i class="fa-brands fa-tiktok fa-2x hover:text-base-200 transition duration-500"></i>
+				</a>
+			</nav>
+		</footer>
+        <script src="https://kit.fontawesome.com/1ebdf46113.js" crossorigin="anonymous"></script>
+    </body>
 </html>
