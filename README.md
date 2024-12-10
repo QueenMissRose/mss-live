@@ -1,3 +1,3 @@
 # Moji Static Studios
 
-## Need a website? At Moji Static Studios, we got you covered.
+## Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.
