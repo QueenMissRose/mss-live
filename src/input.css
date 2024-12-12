@@ -1,16 +1,18 @@
-/*! Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-/*Roboto Mono*/
-
-@font-face {
-    font-family: 'Milk and Honey';
-    src: url('/public/fonts/milk_and_honey/Milk And Honey.ttf') format('truetype');
-}
-
 /*!Tailwind Components etc. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*! Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*Roboto Mono*/
+
+@layer base {
+    @font-face {
+        font-family: 'Milk and Honey';
+        src: url('/public/fonts/milk_and_honey/Milk And Honey.ttf') format("truetype");
+    }
+}
 
 
 /*! Commonly used styles */

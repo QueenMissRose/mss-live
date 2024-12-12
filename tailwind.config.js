@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto Mono', 'serif'],
-        milk: ['Milk and Honey', 'serif']
+        'roboto': ['Roboto\\ Mono', 'serif'],
+        'milk': ['Milk\\ and\\ Honey', 'sans-serif']
         
       },
       boxShadow: {
