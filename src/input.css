@@ -8,7 +8,7 @@
 @layer base {
     @font-face {
         font-family: 'milk';
-        src: url('../public/fonts/milk.ttf') format('truetype');
+        src: url('../public/img/fonts/milk.ttf') format('truetype');
     }
 }
 

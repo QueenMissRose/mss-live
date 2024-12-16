@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/*.{html,js}"],
+  content: ['./public/**/*.{html,js}', './src/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
         roboto: ['Roboto Mono', 'mono'],
-        milk: ['milk', 'DM Serif Text', 'serif']
-    
+        milk: ['milk', 'DM Serif Text', 'serif'],
       },
       boxShadow: {
         'boxy': '4px 4px 0px 0px rgba(0, 0, 0, 25%)',
