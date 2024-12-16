@@ -659,7 +659,7 @@ html {
 @font-face {
   font-family: 'milk';
 
-  src: url('../public/fonts/milk_and_honey/Milk-And-Honey.ttf') format("truetype");
+  src: url('../public/fonts/milk.ttf') format('truetype');
 }
 
 .container {
@@ -1144,6 +1144,48 @@ html {
   min-width: 4rem;
 }
 
+.swap {
+  position: relative;
+  display: inline-grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  place-content: center;
+  cursor: pointer;
+}
+
+.swap > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.swap input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.swap .swap-on,
+.swap .swap-indeterminate,
+.swap input:indeterminate ~ .swap-on {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-off,
+.swap-active .swap-off,
+.swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-on,
+.swap-active .swap-on,
+.swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
+
 .textarea {
   min-height: 3rem;
   flex-shrink: 1;
@@ -1474,6 +1516,12 @@ html {
 .menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {
   transform: rotate(225deg);
   margin-top: 0;
+}
+
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
 }
 
 .mockup-browser .mockup-browser-toolbar .input {
@@ -2352,11 +2400,11 @@ html {
 }
 
 .font-milk {
-  font-family: milk, ui-sans-serif, sans-serif;
+  font-family: milk, DM Serif Text, serif;
 }
 
 .font-roboto {
-  font-family: Roboto Mono, ui-monospace, mono;
+  font-family: Roboto Mono, mono;
 }
 
 .text-2xl {
@@ -2531,10 +2579,6 @@ html {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/*Roboto Mono*/
-
-/*! Fonts */
-
 /* Honey and Milk */
 
 /*! Commonly used styles */
@@ -2557,25 +2601,25 @@ html {
 }
 
 .h1 {
-  font-family: milk, ui-sans-serif, sans-serif;
+  font-family: milk, DM Serif Text, serif;
   font-size: 3.75rem;
   line-height: 1;
 }
 
 .h2 {
-  font-family: milk, ui-sans-serif, sans-serif;
+  font-family: milk, DM Serif Text, serif;
   font-size: 3.75rem;
   line-height: 1;
 }
 
 .h4 {
-  font-family: milk, ui-sans-serif, sans-serif;
+  font-family: milk, DM Serif Text, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 .p {
-  font-family: Roboto Mono, ui-monospace, mono;
+  font-family: Roboto Mono, mono;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -2589,7 +2633,7 @@ html {
 }
 
 .roboto-span {
-  font-family: Roboto Mono, ui-monospace, mono;
+  font-family: Roboto Mono, mono;
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: uppercase;

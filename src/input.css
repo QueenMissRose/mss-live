@@ -3,20 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Roboto Mono*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-/*! Fonts */
-
 
 /* Honey and Milk */
 @layer base {
     @font-face {
         font-family: 'milk';
-        src: url('../public/fonts/milk_and_honey/Milk-And-Honey.ttf') format("truetype");
+        src: url('../public/fonts/milk.ttf') format('truetype');
     }
 }
-
 
 /*! Commonly used styles */
 .card {
