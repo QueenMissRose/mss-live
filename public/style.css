@@ -659,7 +659,7 @@ html {
 @font-face {
   font-family: 'milk';
 
-  src: url('../public/img/fonts/milk.ttf') format('truetype');
+  src: url('https://cdn.jsdelivr.net/gh/jolyssa/milk.ttf/milk.ttf') format('truetype');
 }
 
 .container {
@@ -2400,7 +2400,7 @@ html {
 }
 
 .font-milk {
-  font-family: milk, DM Serif Text, serif;
+  font-family: milk, serif;
 }
 
 .font-roboto {
@@ -2601,19 +2601,19 @@ html {
 }
 
 .h1 {
-  font-family: milk, DM Serif Text, serif;
+  font-family: milk, serif;
   font-size: 3.75rem;
   line-height: 1;
 }
 
 .h2 {
-  font-family: milk, DM Serif Text, serif;
+  font-family: milk, serif;
   font-size: 3.75rem;
   line-height: 1;
 }
 
 .h4 {
-  font-family: milk, DM Serif Text, serif;
+  font-family: milk, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }

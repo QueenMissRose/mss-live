@@ -8,8 +8,8 @@
 @layer base {
     @font-face {
         font-family: 'milk';
-        src: url('../public/img/fonts/milk.ttf') format('truetype');
-    }
+        src: url('https://cdn.jsdelivr.net/gh/jolyssa/milk.ttf/milk.ttf') format('truetype');
+      }
 }
 
 /*! Commonly used styles */
