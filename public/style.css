@@ -1927,6 +1927,11 @@ html {
   margin-right: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .-mt-14 {
   margin-top: -3.5rem;
 }
@@ -2126,6 +2131,10 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {

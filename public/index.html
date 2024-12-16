@@ -18,6 +18,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="Moji Static Studios" />
 		<link rel="manifest" href="/ico/site.webmanifest" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="style.css">
 	</head>
 
@@ -76,14 +77,14 @@
 		<section
 			class="pt-28 h-screen flex flex-col justify-center items-center text-center font-milk px-4 bg-base-200" id="top">
 			<!--? Main Tagline -->
-			<div class="bg-white p-8 max-w-3xl border-2 border-black rounded-3xl py-20 px-4 shadow-boxy sm:px-10 xl:w-auto because">
-				<h1 class="text-2xl sm:text-4xl md:text-5xl text-gray-900 leading-tight">
+			<div data-aos="fade-up" data-aos-duration="1000" class="bg-white p-8 max-w-3xl border-2 border-black rounded-3xl py-20 px-4 shadow-boxy sm:px-10 xl:w-auto because">
+				<h1 class="text-4xl md:text-5xl text-gray-900 leading-tight">
 					Because Life's Too Short for Ugly Websites. Let's Make Yours Shine.
 				</h1>
 			</div>
 
 			<!--? Brand Card -->
-			<div class="  rounded-3xl px-6 py-3 bg-accent border-2 border-black -mt-14 shadow-boxy logo">
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0" class=" rounded-3xl px-6 py-3 bg-accent border-2 border-black -mt-14 shadow-boxy logo">
 				<img src="img/logo.png" alt="logo of Moji Static Studios" class="  sm:w-auto sm:h-20 ">
 			</div>
 		</section>
@@ -93,64 +94,75 @@
 		<!--! What We Do -->
 		<section id="what-we-do" class="bg-base-100 min-h-screen flex flex-col items-center py-12 mx-4">
 			<div class="container mx-auto text-center">
-				<h2 class="text-3xl font-milk mb-6 h4 pt-28">What We Do</h2>
-				<p class="text-base-content mb-10 font-roboto">
-					At Moji Static Studios, we design and develop stunning websites that help your business grow.
-				</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0">
+					<h2 class="text-3xl font-milk mb-6 h4 pt-28">What We Do</h2>
+					<p class="text-base-content mb-10 font-roboto">
+						At Moji Static Studios, we design and develop stunning websites that help your business grow.
+					</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-0">
 
 					<!--? Card 1 -->
-					<div class="bg-accent rounded-3xl border-2 border-black shadow-boxy what">
-						<div class="pt-10">
-							<i class="fa-solid fa-pen-fancy fa-2x border-2 border-black rounded-full p-6"></i>
+					<div style="overflow-x: hidden; padding:  20px;">
+						<div  data-aos="fade-right" data-aos-duration="1000" class="bg-accent rounded-3xl border-2 border-black shadow-boxy what">
+							<div class="pt-10">
+								<i class="fa-solid fa-pen-fancy fa-2x border-2 border-black rounded-full p-6"></i>
+							</div>
+							<div class="card-body text-center">
+								<h3 class="text-xl font-semibold text-primary-focus font-milk">Custom Website Design</h3>
+								<p class="text-base-content font-roboto">
+									Beautiful, responsive designs tailored to your brand.
+								</p>
+							</div>
 						</div>
-						<div class="card-body text-center">
-							<h3 class="text-xl font-semibold text-primary-focus font-milk">Custom Website Design</h3>
-							<p class="text-base-content font-roboto">
-								Beautiful, responsive designs tailored to your brand.
-							</p>
-						</div>
+
 					</div>
 
 					<!--? Card 2 -->
-					<div
-						class="bg-accent-content rounded-3xl border-2 border-black shadow-boxy">
-						<div class="pt-10">
-							<i class="fa-solid fa-file-code fa-2x border-2 border-black rounded-full py-6 px-7"></i>
+					<div style="overflow-x: hidden; padding:  20px;">
+						<div data-aos="fade-left" data-aos-duration="1000" class="bg-accent-content rounded-3xl border-2 border-black shadow-boxy">
+							<div class="pt-10">
+								<i class="fa-solid fa-file-code fa-2x border-2 border-black rounded-full py-6 px-7"></i>
+							</div>
+							<div class="card-body text-center">
+								<h3 class="text-xl font-semibold text-primary-focus font-milk">Web Development</h3>
+								<p class="text-base-content font-roboto">
+									Scalable, fast, and secure websites built with cutting-edge tech.
+								</p>
+							</div>
 						</div>
-						<div class="card-body text-center">
-							<h3 class="text-xl font-semibold text-primary-focus font-milk">Web Development</h3>
-							<p class="text-base-content font-roboto">
-								Scalable, fast, and secure websites built with cutting-edge tech.
-							</p>
-						</div>
+
 					</div>
 
 					<!--? Card 3 -->
-					<div
-						class="bg-accent shadow-boxy md:bg-accent-content rounded-3xl border-2 border-black ">
-						<div class="pt-6">
-							<i class="fa-solid fa-magnifying-glass-dollar fa-2x border-2 border-black rounded-full p-6"></i>
-						</div>
-						<div class="card-body text-center">
-							<h3 class="text-xl font-semibold text-primary-focus font-milk">SEO & Optimisation</h3>
-							<p class="text-base-content font-roboto">
-								Websites optimised for speed, search engines, and conversions.
-							</p>
+					<div style="overflow-x: hidden; padding:  20px;">
+						<div
+							data-aos="fade-right" data-aos-duration="1000" class="bg-accent shadow-boxy md:bg-accent-content rounded-3xl border-2 border-black ">
+							<div class="pt-6">
+								<i class="fa-solid fa-magnifying-glass-dollar fa-2x border-2 border-black rounded-full p-6"></i>
+							</div>
+							<div class="card-body text-center">
+								<h3 class="text-xl font-semibold text-primary-focus font-milk">SEO & Optimisation</h3>
+								<p class="text-base-content font-roboto">
+									Websites optimised for speed, search engines, and conversions.
+								</p>
+							</div>
 						</div>
 					</div>
 
 					<!--? Card 4 -->
-					<div
-						class="bg-accent-content shadow-boxy md:bg-accent rounded-3xl border-2 border-black">
-						<div class="pt-6">
-							<i class="fa-solid fa-toolbox fa-2x border-2 border-black rounded-full p-6"></i>
-						</div>
-						<div class="card-body text-center">
-							<h3 class="text-xl font-semibold text-primary-focus font-milk">Support & Maintenance</h3>
-							<p class="text-base-content font-roboto">
-								Keep your site updated and running smoothly with our expert help.
-							</p>
+					<div style="overflow-x: hidden; padding:  20px;">
+						<div
+							data-aos="fade-left" data-aos-duration="1000" class="bg-accent-content shadow-boxy md:bg-accent rounded-3xl border-2 border-black">
+							<div class="pt-6">
+								<i class="fa-solid fa-toolbox fa-2x border-2 border-black rounded-full p-6"></i>
+							</div>
+							<div class="card-body text-center">
+								<h3 class="text-xl font-semibold text-primary-focus font-milk">Support & Maintenance</h3>
+								<p class="text-base-content font-roboto">
+									Keep your site updated and running smoothly with our expert help.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -170,7 +182,7 @@
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-4">
 
 					<!--? Card 1 -->
-					<div class="relative bg-base-200 rounded-3xl p-6 border-2 border-black shadow-boxy">
+					<div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" class="relative bg-base-200 rounded-3xl p-6 border-2 border-black shadow-boxy">
 						<div
 							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-milk flex items-center justify-center rounded-full">
 							<p class="mt-1">1</p>
@@ -180,7 +192,7 @@
 					</div>
 
 					<!--? Card 2 -->
-					<div class="relative bg-neutral rounded-3xl p-6 border-2 border-black shadow-boxy">
+					<div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-once="true" class="relative bg-neutral rounded-3xl p-6 border-2 border-black shadow-boxy">
 						<div
 							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-milk flex items-center justify-center rounded-full">
 							<p class="mt-1">2</p>
@@ -190,7 +202,7 @@
 					</div>
 
 					<!--? Card 3 -->
-					<div class="relative bg-base-100 rounded-3xl p-6 border-2 border-black shadow-boxy">
+					<div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="relative bg-base-100 rounded-3xl p-6 border-2 border-black shadow-boxy">
 						<div
 							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-milk flex items-center justify-center rounded-full">
 							<p class="mt-1">3</p>
@@ -200,7 +212,7 @@
 					</div>
 
 					<!--? Card 4 -->
-					<div class="relative bg-info rounded-3xl p-6 border-2 border-black shadow-boxy">
+					<div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="750" data-aos-once="true" class="relative bg-info rounded-3xl p-6 border-2 border-black shadow-boxy">
 						<div
 							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-milk flex items-center justify-center rounded-full">
 							<p class="mt-1">4</p>
@@ -210,7 +222,7 @@
 					</div>
 
 					<!--? Card 5 -->
-					<div class="relative bg-base-200 rounded-3xl p-6 shadow-boxy md:col-span-2 border-2 border-black">
+					<div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true" class="relative bg-base-200 rounded-3xl p-6 shadow-boxy md:col-span-2 border-2 border-black">
 						<div
 							class="absolute -top-3 -left-3 w-8 h-8 bg-black text-white font-milk flex items-center justify-center rounded-full">
 							<p class="mt-1">5</p>
@@ -223,7 +235,7 @@
 		</section>
 
 
-		<!--!pricing -->
+		<!--!Pricing -->
 
 		<div class="bg-base-100" id="pricing">
 
@@ -232,7 +244,7 @@
 
 			<main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
 
-				<div class="max-w-md mx-auto mb-14 text-center">
+				<div data-aos="fade-down" data-aos-duration="1000" class="max-w-md mx-auto mb-14 text-center">
 					<h1 class="text-4xl mb-6 lg:text-5xl font-milk pt-28">
 						What's <span class="font-milk font-thin text-accent">Right</span> For You?
 					</h1>
@@ -245,7 +257,7 @@
 
 					<!-- ? Tier 1 : Starter -->
 					<div
-						class="w-full flex-1 mt-8 p-8 order-2 bg-base-100 shadow-boxy rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none border-2 border-black lg:border-r-0">
+						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true" class="w-full flex-1 mt-8 p-8 order-2 bg-base-100 shadow-boxy rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none border-2 border-black lg:border-r-0">
 						<div class="mb-7 pb-7 flex items-center border-b border-lime-950">
 							<div class="rounded-3xl w-20 h-20 bg-gray-200"></div>
 							<div class="ml-5">
@@ -293,7 +305,7 @@
 
 					<!-- ? Second Tier : Professional Website -->
 					<div
-						class="w-full flex-1 p-8 order-1 shadow-boxy rounded-3xl bg-base-200 text-blue-950 z-10 sm:w-96 lg:w-full lg:order-2 lg:mt-0 border-2 border-black">
+					data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="w-full flex-1 p-8 order-1 shadow-boxy rounded-3xl bg-base-200 text-blue-950 z-10 sm:w-96 lg:w-full lg:order-2 lg:mt-0 border-2 border-black">
 						<div class="mb-8 pb-8 flex items-center border-b border-blue-950">
 							<div class="rounded-3xl w-20 h-20 bg-accent"></div>
 							<div class="ml-5">
@@ -348,7 +360,7 @@
 
 					<!--? Tier 3: Premium Website -->
 					<div
-						class="w-full flex-1 mt-8 p-8 order-3 bg-base-300 rounded-3xl shadow-boxy sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none border-2 border-black lg:border-l-0">
+						data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true" class="w-full flex-1 mt-8 p-8 order-3 bg-base-300 rounded-3xl shadow-boxy sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none border-2 border-black lg:border-l-0">
 						<div class="mb-7 pb-7 flex items-center border-b border-lime-950">
 							<div class="rounded-3xl w-20 h-20 bg-accent-content"></div>
 							<div class="ml-5">
@@ -403,12 +415,12 @@
 		<!--! Contact Us -->
 		<section class="bg-base-200 py-16 px-4" id="contact">
 			<!--?Ready for a website? -->
-			<div>
+			<div data-aos="fade-down" data-aos-duration="1000"> 
 				<h4 class="h4 text-center pt-28">Ready for a website? Get in Touch</h4>
 				<p class="text-center font-roboto pt-2 pb-16">Send us an email through the form or schedule a call below</p>
 			</div>
 
-			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 				<!--? Contact Form -->
 				<div class="bg-white shadow-boxy rounded-3xl p-8">
 					<h2 class="text-3xl font-milk text-gray-900 mb-6 text-center">Send an Email</h2>
@@ -449,7 +461,7 @@
 					<p class="font-roboto text-center">If embedded page isn't working to book a call, click <a href="https://calendly.com/mojistaticstudios" target="_blank" class="underline">here</a></p>
 				</div>
 			</div>
-			<div>
+			<div data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">
 				<h1 class="py-32 text-center h2">Looking forward to talking with you soon!</h1>
 			</div>
 		</section>
@@ -480,8 +492,12 @@
 		</footer>
 
 
+		<!-- ! Scripts -->
 		<script src="https://kit.fontawesome.com/1ebdf46113.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-		<script src="main.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
